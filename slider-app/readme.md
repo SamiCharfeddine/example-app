@@ -16,7 +16,7 @@ var controlState = value.get("state").findWhere({type: "Control"});
 var reportState = value.get("state").findWhere({type: "Report"});
 ```
 
-As we explained before, the reportState contains the current state of the value, and the controlState is actually what the user is sending to the server.
+As we explained before, the reportState contains the current state of the value, and the controlState is used by the user to change the state of the value.
 
 Everything is now ready to create this simple app, so let's start by changing our html div to a slider using the lib:
 ```javascript
