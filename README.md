@@ -82,7 +82,7 @@ Consider one of the eyes of our pumpkin,they are smart device lights where we ca
 
 In short we have a Device with three Values.
 
-Every Value can have one or two States in relation depending on the permission if we can "write", "read" or "read and write".<br/>
+Every Value can have one or two States in relation depending on the permission if we can "read", "write" or "read & write".<br/>
 Consider the intensity of the light: clearly we want to be able to check the actual intensity, and we want to be able to modify the intensity of the light. For this reason we have the following two States:
 
 * a Report State: used to read the actual State of our Value
