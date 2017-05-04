@@ -30,7 +30,7 @@ $("#slider").roundSlider({
 });
 ```
 
-And that's it! now we have a slider app that controls switch values! but we are still missing one small step... when the user or someone that have this value change its state from another app, we want to update the value in our app too! yeah... that sounds hard... but don't worry, nothing is difficult here by a simple code, we can do that! we are going to listen to reportState changeData event, and when we receive that, we update our slider state:
+And that's it! now we have a slider app that controls switch values! but we are still missing one small step... when the user or someone that have this value change its state from another app, we want to update the value in our app too! yeah... that sounds hard... but don't worry, nothing is difficult here, by a simple code, we can do that! we are going to listen to reportState changeData event, and when we receive that, we update our slider state:
 ```javascript
 reportState.on("change:data", function(){
   $("#slider").roundSlider('setValue', reportState.get("data")+"");
