@@ -1,11 +1,12 @@
-This is a simple app that will control a value's state(type: switch) using roundslider lib.
+This is a basic app that will control a "switch" value using [roundslider](http://roundsliderui.com/) lib.
+If you are not used to [backbonejs](http://backbonejs.org/), you might want to take a look at [Backbonejs Model](http://backbonejs.org/#Model) for now.
 
-First of all we should start by creating our view. In this app, the view is very simple since all we want to do is to create a roundslider for a switch value, so our HTML will look like:
+First of all we should start by creating our view. In this app, since all we want to do is to create a roundslider for a switch value, our HTML will look like:
 ```html
 <div id="slider"></div>
 ```
 
-Now we should start creating our javacsript. Since we want to create a round slider to show the value's state, we will first start by trying to get the value, for that, all we have to do is use the function "getValue" with the type of the value:
+Now we should start creating our javacsript. Since we want to create a roundslider to show the value's state, we will first start by trying to get the value, for that, all we have to do is use the function "getValue" with the type of the value as an argument:
 ```javascript
 var value = getValue({"type": "switch"});
 ```
@@ -17,7 +18,7 @@ var reportState = value.get("state").findWhere({type: "Report"});
 ```
 
 As we explained before, the reportState contains the current state of the value, and the controlState is used by the user to change the state of the value.<br/>
-Everything is now ready to create this simple app, so let's start by changing our html div to a slider using the lib:
+Everything is now ready, so let's start by changing our html div to a slider using the lib:
 ```javascript
 $("#slider").roundSlider({
   radius: 85,
@@ -31,7 +32,7 @@ $("#slider").roundSlider({
 });
 ```
 
-And that's it! now we have a slider app that controls switch values! but we are still missing one small step... when the user or someone that have this value change its state from another app, we want to update the value in our app too! yeah... that sounds hard... but don't worry, nothing is difficult here, by a simple code, we can do that! we are going to listen to reportState changeData event, and when we receive that, we update our slider state:
+And that's it, now we have a slider app that controls switch values, but we are still missing one small step... when the user or someone that have this value changes its state from another app, we want to update the value in our app too... that sounds hard... but don't worry, we can do that just by listening to reportState "change:data" event, and when we receive that, we update our slider state:
 ```javascript
 reportState.on("change:data", function(){
   $("#slider").roundSlider('setValue', reportState.get("data")+"");
