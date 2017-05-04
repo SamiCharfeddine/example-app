@@ -5,7 +5,7 @@ First of all we should start by creating our view. In this app, the view is very
 ```
 
 Now we should start creating our javacsript. Since we want to create a round slider to show the value's state, we will first start by trying to get the value, for that, all we have to do is use the function "getValue" with the type of the value:
-```
+```javascript
 var value = getValue({"type": "switch"});
 ```
 
