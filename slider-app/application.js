@@ -1,7 +1,6 @@
 var value = getValue({"type": "switch"});
 var controlState = value.get("state").findWhere({type: "Control"});
 var reportState = value.get("state").findWhere({type: "Report"});
-var number = value.get("number");
 
 $("#slider").roundSlider({
   radius: 85,
