@@ -60,8 +60,7 @@ The attribute permission represent the actions that you can do to the value. If 
 ```
 
 # Example
-Every Network is composed of different Devices.
-
+Every Network is composed of different Devices.<br/>
 Suppose that, for example, we have a Halloween pumpkin with red lights as eyes, a camera as nose and a mouth provided of some led that we can use to write some messages. Then we have the following structure:
 
 * our pumpking is our Network
@@ -71,8 +70,7 @@ Suppose that, for example, we have a Halloween pumpkin with red lights as eyes, 
 
 In conclusion we have a Network with four Devices.
 
-Every Device is composed of different components, these components are called Values.
-
+Every Device is composed of different components, these components are called Values.<br/>
 Consider one of the eyes of our pumpkin,they are smart device lights where we can provide different colours (RGB), different intensity and turn them on and off. This means that for each light we have the following structure:
 
 * our light is our Device
@@ -82,12 +80,10 @@ Consider one of the eyes of our pumpkin,they are smart device lights where we ca
 
 In short we have a Device with three Values.
 
-Every Value can have one or two States in relation depending on the permission if we can "write", "read" or "read and write".
-
+Every Value can have one or two States in relation depending on the permission if we can "write", "read" or "read and write".<br/>
 Consider the intensity of the light: clearly we want to be able to check the actual intensity, and we want to be able to modify the intensity of the light. For this reason we have the following two States:
 
 * a Report State: used to read the actual State of our Value
 * a Control State: used to modify the State of our Value
 
 In short this Value is provided of two States.
-
