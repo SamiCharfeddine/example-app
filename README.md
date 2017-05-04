@@ -4,7 +4,7 @@ Q is an app based website that allows you to create web application, like smartp
 # Models
 
 ### Network
-Basically, a Network is a container of Devices, it doesn't have any specific things.
+Basically, a Network is a group of Devices.
 ```json
 {
   ":id": "8e9c8a3f-cd3c-41be-9a52-a2c6d0f3c82a",
