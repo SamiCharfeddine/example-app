@@ -1,5 +1,5 @@
 This is a basic app that will control a "switch" value using [roundslider](http://roundsliderui.com/) lib.
-If you are not used to [backbonejs](http://backbonejs.org/), you might want to take a look at [Backbonejs Model](http://backbonejs.org/#Model) for now.
+If you are not used to [Backbonejs](http://backbonejs.org/), you might want to take a look at [Backbonejs Model](http://backbonejs.org/#Model) for now.
 
 First of all we should start by creating our view. In this app, since all we want to do is to create a roundslider for a switch value, our HTML will look like:
 ```html
