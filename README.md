@@ -33,7 +33,7 @@ Device is a representation of a real device. One device can contain multiple val
 ```
 
 ### Value
-A value is a service of the device, for example: a device type:light can have value:on/off, value:brightness and value:color. A value can assign some limit to the states: as min, max or steps.
+Value is a service of the device, for example: a device type:light can have value:on/off, value:brightness and value:color. A value can assign some limit to the states: as min, max or steps.
 The attribute permission represent the actions that you can do to the value. If permission is "r"(read) then you can access only reportState, if permission: "w"(write) then will be able to use only controlState and if the permission: "rw" then you can use both
 ```json
 {
@@ -81,7 +81,7 @@ Consider one of the eyes of our pumpkin. These are very smart light where we can
 
 In short we have a Device with five Values.
 
-Every Value can have one or two States in relation if we can write or read.
+Every Value can have one or two States in relation if we can write or read.<return>
 Consider the intensity of the light: clearly we wants to be able to check the actual intensity, and we want to be able to modify the intensity of the light. For this reason we have the following two States:
 
 * a Report State: used to read the actual State of our Value
