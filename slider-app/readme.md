@@ -1,4 +1,5 @@
 This is a simple app that will control a value's state(type: switch) using roundslider lib.
+
 First of all we should start by creating our view. In this app, the view is very simple since all we want to do is to create a roundslider for a switch value, so our HTML will look like:
 ```html
 <div id="slider"></div>
@@ -16,6 +17,7 @@ var reportState = value.get("state").findWhere({type: "Report"});
 ```
 
 As we explained before, the reportState contains the current state of the value, and the controlState is actually what the user is sending to the server.
+
 Everything is now ready to create this simple app, so let's start by changing our html div to a slider using the lib:
 ```javascript
 $("#slider").roundSlider({
