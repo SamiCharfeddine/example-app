@@ -34,7 +34,7 @@ Device is a representation of a real device. One Device can contain multiple val
 
 ### Value
 Value is a service of the device, for example: a device type:light can have value:on/off, value:brightness and value:color. A Value can assign some limit to the states: as min, max or steps.
-The attribute permission represent the actions that you can do to the value. If permission is "r"(read) then you can access only reportState, if permission: "w"(write) then will be able to use only controlState and if the permission: "rw" then you can use both
+The attribute permission represent the actions that you can do to the value.
 ```json
 {
   ":id": "8e9c8a3f-cd3c-41be-9a52-a2c6d0f3c82c",
@@ -48,6 +48,8 @@ The attribute permission represent the actions that you can do to the value. If 
 ```
 
 ### State
+Represente the current state of the value.<br/>
+If permission of the Value is "r"(read) then you can access only reportState, if permission: "w"(write) then will be able to use only controlState and if the permission: "rw" then you can use both.
 ```json
 {
   ":id": "8e9c8a3f-cd3c-41be-9a52-a2c6d0f3c82d",
