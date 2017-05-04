@@ -60,6 +60,16 @@ In relation if we can modify or not the Value, we will have a Control state. Sim
 }
 ```
 
+### Data
+Data will save whatever you put in it.
+```json
+{
+  ":id": "8e9c8a3f-cd3c-41be-9a52-a2c6d0f3c82d",
+  ":type": "urn:seluxit:xml:bastard:data-1.2",
+  "nickname": "Ohayo"
+}
+```
+
 # Example
 Every Network is composed of different Devices.<br/>
 Suppose that, for example, we have a Halloween pumpkin with red lights as eyes, a camera as nose and a mouth provided of some led that we can use to write some messages. Then we have the following structure:
