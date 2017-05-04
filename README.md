@@ -1,5 +1,5 @@
 # Introduction
-Q is an app based website that allows you to create web application, like smartphones, but what really makes Q special ?
+Q is an app based website that allows you to create web application, like smartphones
 
 # Models
 
