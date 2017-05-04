@@ -3,7 +3,7 @@ Q is an app based website that allows you to create web application, like smartp
 
 # Models
 
-## Network
+### Network
 Basically, a Network is a container of devices, it doesn't have any specific things.
 ```json
 {
@@ -14,7 +14,7 @@ Basically, a Network is a container of devices, it doesn't have any specific thi
 }
 ```
 
-## Device
+### Device
 Device is a representation of a real device. One device can contain multiple values like (on/off, light...)
 ```json
 {
@@ -32,7 +32,7 @@ Device is a representation of a real device. One device can contain multiple val
 }
 ```
 
-## Value
+### Value
 A value is a service of the device, for example: a device type:light can have value:on/off, value:brightness and value:color. A value can assign some limit to the states: as min, max or steps.
 The attribute permission represent the actions that you can do to the value. If permission is "r"(read) then you can access only reportState, if permission: "w"(write) then will be able to use only controlState and if the permission: "rw" then you can use both
 ```json
@@ -47,7 +47,7 @@ The attribute permission represent the actions that you can do to the value. If 
 }
 ```
 
-## State
+### State
 ```json
 {
   ":id": "8e9c8a3f-cd3c-41be-9a52-a2c6d0f3c82d",
