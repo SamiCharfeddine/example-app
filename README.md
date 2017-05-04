@@ -71,7 +71,8 @@ Suppose that, for example, we have a Halloween pumpkin with red lights as eyes, 
 
 In conclusion we have a Network with four Devices.
 
-Every Devices is composed of different components, these components are colled Values.
+Every Device is composed of different components, these components are colled Values.
+
 Consider one of the eyes of our pumpkin. These are very smart light where we can provide different colours (RGB), a different intensity or if the device is on or off. This means that for this light we have the following structure:
 
 * our light is our Device
@@ -81,7 +82,8 @@ Consider one of the eyes of our pumpkin. These are very smart light where we can
 
 In short we have a Device with five Values.
 
-Every Value can have one or two States in relation if we can write or read.<return>
+Every Value can have one or two States in relation if we can write or read.
+
 Consider the intensity of the light: clearly we wants to be able to check the actual intensity, and we want to be able to modify the intensity of the light. For this reason we have the following two States:
 
 * a Report State: used to read the actual State of our Value
